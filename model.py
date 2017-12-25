@@ -202,7 +202,7 @@ if __name__ == '__main__':
         if epoch % print_every == 0:
             print_loss_avg = print_loss_total / print_every
             print_loss_total = 0
-            print_summary = '%s (%d %d%%) %.4f' % (time_since(start, epoch / n_epochs), epoch, epoch / n_epochs * 100, print_loss_avg)
+            print_summary = '%s (%d %d%%) %.4f' % (time_since(start, epoch / NUM_EPOCHS), epoch, epoch / NUM_EPOCHS * 100, print_loss_avg)
             print(print_summary)
 
         if epoch % plot_every == 0:
